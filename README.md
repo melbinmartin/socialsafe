@@ -1,8 +1,8 @@
 <h1 align="center">Cyberbullying Detection API</h1>
 
 <p align="center">
-  <img src="cyberbull![logo](https://github.com/melbinmartin/socialsafe/assets/79624780/9f652be5-ed20-423a-ac81-61c47ab6f811)
-ying.png" alt="Cyberbullying Detection" width="300"/>
+  ![logo](https://github.com/melbinmartin/socialsafe/assets/79624780/29237305-2a2a-485d-ba1c-93184e2e342f)
+
 </p>
 
 <p align="center">
