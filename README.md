@@ -37,8 +37,6 @@ git clone https://github.com/your-username/cyberbullying-detection.git
 2.Change to the project directory:
 '''bash
 cd cyberbullying-detection.
-
-## **Usage**
-
-
+---
+python app.py
 
