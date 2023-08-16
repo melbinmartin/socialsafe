@@ -94,5 +94,5 @@ Renders the main page of the web application.
 ![image](https://github.com/melbinmartin/socialsafe/assets/79624780/1af00f80-814d-419e-ab76-1d6612c9616b)
 
 <p align="center">
-  Made From Stratch By Melbin Martin
+  Made From Stratch By :raised_hand_with_fingers_splayed: Melbin Martin
 </p>
