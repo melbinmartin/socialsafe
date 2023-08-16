@@ -46,9 +46,23 @@ python app.py.
 ## Model Training
 The logistic regression model used for cyberbullying detection is trained on pre-processed text data. The training script is available in the repository: train_model.py.
 
-## Preprocessing
-The text data is preprocessed to remove missing values and standardize the features. The preprocessing script is available in the repository: preprocess_data.py.
+In order to prepare the text data for training the cyberbullying detection model, several preprocessing steps are performed. These steps help to clean and standardize the text data before feeding it into the machine learning model.
+## preprocessing 
+The following preprocessing steps are applied to the text data:
 
+1. **Removing Missing Values**: Any rows with missing text data are removed from the dataset to ensure the quality of the training data.
+
+2. **Text Cleaning**: The text data undergoes cleaning to remove unnecessary characters, special symbols, and any formatting artifacts that might affect the model's performance.
+
+3. **Tokenization**: The cleaned text is tokenized, which involves breaking down the text into individual words or tokens. This step is essential for creating the vocabulary for feature extraction.
+
+4. **Stopword Removal**: Common stopwords (e.g., "and", "the", "is") are removed from the tokenized text. Stopwords are often irrelevant for classification tasks and can be safely discarded.
+
+5. **Lowercasing**: All tokens are converted to lowercase. This ensures that words in different cases are treated as the same word and reduces the complexity of the model.
+
+6. **Stemming or Lemmatization**: Tokens are stemmed or lemmatized to reduce words to their root form. This further reduces vocabulary size and helps the model generalize better.
+
+7. **Feature Extraction**: The preprocessed text is transformed into numerical features that the model can understand. In this project, a Bag-of-Words approach is used, where the frequency of each token in the text is used as a feature.
 ## Dependencies
 Flask
 pandas
