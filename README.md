@@ -71,7 +71,7 @@ Flask
 pandas
 scikit-learn
 For the full list of dependencies, refer to the requirements.txt file.
-![image](https://github.com/melbinmartin/socialsafe/assets/79624780/1af00f80-814d-419e-ab76-1d6612c9616b)
+
 
 
 ## API 
@@ -90,8 +90,8 @@ The API will respond with the prediction result and the probability of cyberbull
 ## API Endpoints
 Renders the main page of the web application.
 /predict (POST): Accepts JSON input with a text to predict cyberbullying content.
-
-
+## Result 
+![image](https://github.com/melbinmartin/socialsafe/assets/79624780/1af00f80-814d-419e-ab76-1d6612c9616b)
 
 <p align="center">
   Made From Stratch By Melbin Martin
