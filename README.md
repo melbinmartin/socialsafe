@@ -37,6 +37,21 @@ git clone https://github.com/your-username/cyberbullying-detection.git
 2.Change to the project directory:
 '''bash
 cd cyberbullying-detection.
----
-python app.py
+
+python app.py.
+```
+
+
+--
+## Model Training
+The logistic regression model used for cyberbullying detection is trained on pre-processed text data. The training script is available in the repository: train_model.py.
+
+## Preprocessing
+The text data is preprocessed to remove missing values and standardize the features. The preprocessing script is available in the repository: preprocess_data.py.
+
+## Dependencies
+Flask
+pandas
+scikit-learn
+For the full list of dependencies, refer to the requirements.txt file.
 
