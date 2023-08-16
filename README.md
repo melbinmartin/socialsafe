@@ -57,19 +57,19 @@ For the full list of dependencies, refer to the requirements.txt file.
 ![image](https://github.com/melbinmartin/socialsafe/assets/79624780/1af00f80-814d-419e-ab76-1d6612c9616b)
 
 
-### API 
+## API 
 
 Use the API endpoint to predict cyberbullying in a text:
 
 Send a POST request to http://localhost:5000/predict with a JSON payload containing the text to be analyzed:
 
-json
-Copy code
+```Copy code
 {
     "text": "Hey, you're such a loser!"
 }
+``` 
 The API will respond with the prediction result and the probability of cyberbullying.
 
-API Endpoints
-/: Renders the main page of the web application.
+## API Endpoints
+Renders the main page of the web application.
 /predict (POST): Accepts JSON input with a text to predict cyberbullying content.
