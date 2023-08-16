@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #002B5B;
+    animation: bgAnimation 10s infinite;
+}
+.highlight {
+    background-color: rgb(1, 1, 0);
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: #FF0060;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 36px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+h1 span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+textarea {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    resize: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+label[for="text"] {
+    color: black;
+    font-weight: bold;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    color: #6c63ff;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#result-container {
+    margin-top: 40px;
+    margin-left:550px;
+    margin-right:550px;
+    animation: fadeInAnimation 1s ease-in;
+}
+
+.result-card {
+    background-color: #FFE194;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    #result-container {
+        max-width: 50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .result-card {
+        padding: 30px;
+        
+        
+       
+    }
+}
+
+
+.logo {
+    width: 150px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+}

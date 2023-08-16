@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SocialSafe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   
+<body>
+    <h1>SocialSafe</h1>
+    <div class="card">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="SocialSafe Logo" class="logo">
+       
+        <form id="prediction-form">
+            <label for="text">Express Yourself</label><br>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        </form>
+    </div>
+
+    <div>
+        <div id="result-container" class="result-card"></div>
+    </div>
+
+    <script>
+        document.getElementById("text").addEventListener("input", function() {
+            var text = this.value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/predict", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var result = JSON.parse(xhr.responseText);
+                    var resultContainer = document.getElementById("result-container");
+                    resultContainer.innerHTML = result.result;
+                    resultContainer.innerHTML += "<br>";
+                    resultContainer.innerHTML += "Probability: " + result.probability.toFixed(2);
+                }
+            };
+            xhr.send(JSON.stringify({ text: text }));
+        });
+        
+    </script>
+</body>
+</html>

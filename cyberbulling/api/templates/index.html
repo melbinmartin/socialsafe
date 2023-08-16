@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyberbullying Detection</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Cyberbullying Detection</h1>
+    <form id="prediction-form">
+        <label for="text-input">Enter Text:</label>
+        <input type="text" id="text-input" name="text" required>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="result-container"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#prediction-form').submit(function(event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://127.0.0.1:5000/predict',
+                    data: formData,
+                    success: function(response) {
+                        var result = response.result;
+                        $('#result-container').text(result);
+                        console.log(response)
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
