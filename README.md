@@ -54,4 +54,5 @@ Flask
 pandas
 scikit-learn
 For the full list of dependencies, refer to the requirements.txt file.
+![image](https://github.com/melbinmartin/socialsafe/assets/79624780/1af00f80-814d-419e-ab76-1d6612c9616b)
 
