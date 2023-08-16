@@ -33,3 +33,11 @@ Cyberbullying is a growing concern in online communication. This project aims to
 
 ```bash
 git clone https://github.com/your-username/cyberbullying-detection.git
+
+2.Change to the project directory:
+'''bash
+cd cyberbullying-detection.
+
+## Usage
+
+
