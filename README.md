@@ -77,5 +77,5 @@ Renders the main page of the web application.
 
 
 <p align="center">
-  Made From Stratch By Melbin MArtin
+  Made From Stratch By Melbin Martin
 </p>
