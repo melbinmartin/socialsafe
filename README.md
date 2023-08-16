@@ -73,3 +73,9 @@ The API will respond with the prediction result and the probability of cyberbull
 ## API Endpoints
 Renders the main page of the web application.
 /predict (POST): Accepts JSON input with a text to predict cyberbullying content.
+
+
+
+<p align="center">
+  Made From Stratch By Melbin MArtin
+</p>
