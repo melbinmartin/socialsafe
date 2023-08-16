@@ -47,7 +47,8 @@ python app.py.
 The logistic regression model used for cyberbullying detection is trained on pre-processed text data. The training script is available in the repository: train_model.py.
 
 In order to prepare the text data for training the cyberbullying detection model, several preprocessing steps are performed. These steps help to clean and standardize the text data before feeding it into the machine learning model.
-## preprocessing 
+
+## Preprocessing 
 The following preprocessing steps are applied to the text data:
 
 1. **Removing Missing Values**: Any rows with missing text data are removed from the dataset to ensure the quality of the training data.
@@ -63,6 +64,8 @@ The following preprocessing steps are applied to the text data:
 6. **Stemming or Lemmatization**: Tokens are stemmed or lemmatized to reduce words to their root form. This further reduces vocabulary size and helps the model generalize better.
 
 7. **Feature Extraction**: The preprocessed text is transformed into numerical features that the model can understand. In this project, a Bag-of-Words approach is used, where the frequency of each token in the text is used as a feature.
+
+   
 ## Dependencies
 Flask
 pandas
